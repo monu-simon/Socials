@@ -1,9 +1,22 @@
-import React from 'react'
+// Header.js
+import React from 'react';
+import { Container, Navbar } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <Navbar className="header" bg="light" variant="light">
+      <Container>
+        
+        <Navbar.Brand href="#home" style={{  'font-family': "Pacifico", 'font-size':'xx-large', 'color':'orange'}}>Socials</Navbar.Brand>
 
-export default Header
+        
+        <div className="mx-auto">
+          <span className="text-dark" style={{  'font-family': "Pacifico"}}>Enjoy Connecting</span>
+        </div>
+        
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Header;
